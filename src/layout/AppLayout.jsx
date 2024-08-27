@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
+import { Badge } from '@/components/ui/badge';
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
   return (
@@ -10,7 +11,7 @@ const AppLayout = () => {
         <Header />
         <Outlet />
       </main>
-      <div className='p-10 text-center bg-gray-800 mt-10'></div>
+      <div className="p-10 text-center bg-gray-800 mt-10"></div>
     </div>
   );
 }

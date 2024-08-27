@@ -1,14 +1,13 @@
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import faqs from "@/data/faq.json";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from 'react-router-dom';
 import companies from "../data/companies.json";
-import faqs from "@/data/faq.json";
 
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
@@ -18,7 +17,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 
 
@@ -29,7 +28,7 @@ const LandingPage = () => {
         <h1 className="flex flex-col items-center justify-center gradient-title text-selection text-4xl font-extrabold sm:text-6xl lg:text-8xl tracking-tighter py-4">
           Find Your Dream Job{" "}
           <span className="flex items-center gap-2 text-selection sm:gap-6">
-            and get{" "}
+            and get
             <img
               src="./logo.png"
               alt="logo"
